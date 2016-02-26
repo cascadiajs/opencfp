@@ -15,8 +15,8 @@ class TalkSubmission
         $instance->guardTitleIsAppropriateLength($data);
         $instance->guardDescriptionIsProvided($data);
         $instance->guardTalkTypeIsValid($data);
-        $instance->guardLevelIsValid($data);
-        $instance->guardCategoryIsValid($data);
+        // $instance->guardLevelIsValid($data);
+        // $instance->guardCategoryIsValid($data);
 
         $instance->data = $data;
 
