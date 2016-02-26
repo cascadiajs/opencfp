@@ -2,7 +2,6 @@
     <thead>
         <tr>
             <th align='left'><b>Title</b></th>
-            <th align='left'><b>Category</b></th>
             <th align='left'><b>Created On</b></th>
             <th align='left'><b>Submitted by</b></th>
             <th align='left'><b>Rating</b></th>
@@ -13,7 +12,6 @@
         {% for talk in talks %}
             <tr>
                 <td><a href="{{ url('admin_talk_view', { id: talk.id }) }}" target="new">{{ talk.title|raw }}</a></td>
-                <td>{{ talk.category }}</td>
                 <td>{{ talk.created_at|date("F jS Y \\a\\t g:ia T") }}</td>
                 {% if false == talk.user %}
                 <td><em>Unknown User</em></td>
