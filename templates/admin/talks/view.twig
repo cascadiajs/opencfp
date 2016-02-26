@@ -10,9 +10,7 @@
         </nav>
         <div class="module__body">
             <h2 class="headline">{{ talk.title }}</h2>
-            <p>
-                {% if talk.level is defined %}<span class="label label-primary">{{ talk.level }}</span>{% endif %}
-            </p>
+
             <h5><strong>Submitted by:</strong> <a href="{{ url('admin_speaker_view', { id: talk.user_id }) }}">{{ speaker.first_name }} {{ speaker.last_name }}</a></h5>
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#abstract" aria-controls="abstract" role="tab" data-toggle="tab">Abstract</a></li>
@@ -31,7 +29,6 @@
                     <p>
                         <strong>Slides:</strong> {% if talk.slides is defined %}{{ talk.slides }}{% endif %}<br />
                         <strong>Type:</strong> {{ talk.type }}<br />
-                        <strong>Level:</strong> {% if talk.level is defined %}{{ talk.level }}{% endif %}<br />
                         <strong>Sponsor:</strong> {% if talk.sponsor is defined %}{{ talk.sponsor ? 'Yes' : 'No' }}{% endif %}<br />
                     </p>
                 </div>
