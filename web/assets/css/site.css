@@ -6,11 +6,11 @@ body {
 }
 
 a {
-  color: #e24b3b;
+  color: #014da6;
 }
 
 a:hover {
-  color: #e97467;
+  color: #4d82c1;
 }
 
 .dashboard {
@@ -18,7 +18,8 @@ a:hover {
 }
 
 .header {
-  background: #e24b3b;
+  background: -webkit-linear-gradient(top,#4d82c1,#137630);
+  background: linear-gradient(to bottom,hsl(213, 48%, 53%),HSL(138, 72%, 27%));
   color: #FFF;
   padding: 6rem 0;
 }
@@ -47,8 +48,17 @@ a:hover {
 }
 
 .section--primary {
-  background: #e24b3b;
-  color: #FFF;
+  background: #1e3146;
+  color: #e2efe6;
+}
+
+.section--primary a {
+    color: #6f95c1;
+    text-decoration: underline;
+}
+.section--primary a:hover {
+    color: #6f95c1;
+    text-decoration: underline;
 }
 
 .section--light {
@@ -140,7 +150,7 @@ a:hover {
  */
 .btn-opencfp--primary {
   background: #FFF;
-  color: #e24b3b;
+  color: #0b471d;
 }
 
 .btn-opencfp--primary:hover {
@@ -384,7 +394,7 @@ a:hover {
 }
 
 .navbar-opencfp {
-  background: #374146;
+  background: #1c2d4a;
 }
 
 .navbar-collapse {
@@ -409,7 +419,7 @@ a:hover {
 .navbar-opencfp .nav .open>a:focus
 {
   background: none;
-  border-color: #e24b3b;
+  border-color: #4d82c1;
 }
 
 .navbar-opencfp .navbar-toggle {
