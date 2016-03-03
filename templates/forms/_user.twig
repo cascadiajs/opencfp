@@ -96,7 +96,9 @@
         <label for="form-user-photo" class="col-sm-2 control-label">Photo</label>
         <div class="col-sm-10">
             <input type="file" id="form-user-photo" name="speaker_photo" class="form-control" placeholder="Photo at least 300px wide by 300px high" accept="image/jpg, image/jpeg, image/png">
-            <p class="help-block">Photo should be square, and must be at least 300px wide by 300px high. JPG and PNG are the only accepted formats.</p>
+            <p class="help-block">Photo must be at least 300px wide by 300px high. JPG and PNG are the only accepted formats. We'd prefer if you used a photo that
+            is profile orientation, and shows your head and shoulders. It's not
+            necessary, and photos will not be used during the selection process.</p>
             {% if preview_photo is defined and preview_photo is not empty %}
                 <img src="{{ preview_photo }}" class="profile-photo">
             {% endif %}

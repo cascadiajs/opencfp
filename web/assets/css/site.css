@@ -467,3 +467,8 @@ a:hover {
   height: 12px;
   width: 12px;
 }
+
+.profile-photo {
+    max-width: 300px;
+    max-height: 300px;
+}

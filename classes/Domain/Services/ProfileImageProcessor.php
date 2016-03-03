@@ -60,13 +60,13 @@ class ProfileImageProcessor
 
             $speakerPhoto = Image::make($this->publishDir . '/' . $tempFilename);
 
-            if ($speakerPhoto->height > $speakerPhoto->width) {
-                $speakerPhoto->resize($this->size, null, true);
-            } else {
-                $speakerPhoto->resize(null, $this->size, true);
-            }
+            // if ($speakerPhoto->height > $speakerPhoto->width) {
+            //     $speakerPhoto->resize($this->size, null, true);
+            // } else {
+            //     $speakerPhoto->resize(null, $this->size, true);
+            // }
 
-            $speakerPhoto->crop($this->size, $this->size);
+            // $speakerPhoto->crop($this->size, $this->size);
 
             if ($speakerPhoto->save($this->publishDir . '/' . $publishFilename)) {
                 unlink($this->publishDir . '/' . $tempFilename);
