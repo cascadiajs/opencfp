@@ -472,3 +472,7 @@ a:hover {
     max-width: 300px;
     max-height: 300px;
 }
+
+.profile-photo.img-responsive {
+    max-width: 100%;
+}
