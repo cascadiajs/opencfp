@@ -476,3 +476,11 @@ a:hover {
 .profile-photo.img-responsive {
     max-width: 100%;
 }
+
+a.logo {
+    color: white;
+    line-height: 54px;
+    font-size: 24px;
+}
+
+a.logo img {}
