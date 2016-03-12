@@ -22,10 +22,14 @@
                 <option value="css" {% if type == 'css' %}selected {% endif %}>CSS Day</option>
                 <option value="browser" {% if type == 'browser' %}selected {% endif %}>Browser Day</option>
                 <option value="node" {% if type == 'node' %}selected {% endif %}>Node Day</option>
+                <option value="any" {% if type == 'any' %}selected {% endif %}>Any</option>
             </select>
 
             <p class="help-block">What day do you think this would be best on?
-            If selected, this talk may or may not end up on this day.</p>
+            If you're not sure, or feel like your talk could go on multiple days,
+            go ahead and pick one, or put 'any'. If selected, your talk may or
+            may not end up on that day depending on where the curators think it
+            works best.</p>
         </div>
     </div>
     <div class="form-group">
