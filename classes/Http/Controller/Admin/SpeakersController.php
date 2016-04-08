@@ -18,6 +18,11 @@ class SpeakersController extends BaseController
 
     public function indexAction(Request $req)
     {
+        // Check if user is an logged in and an Admin
+        if (!$this->userHasAccess($this->app)) {
+            return $this->redirectTo('dashboard');
+        }
+
         $rawSpeakers = $this->app['spot']
             ->mapper(\OpenCFP\Domain\Entity\User::class)
             ->all()

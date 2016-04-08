@@ -12,6 +12,11 @@ class AdminsController extends BaseController
 
     public function indexAction(Request $req)
     {
+        // Check if user is an logged in and an Admin
+        if (!$this->userHasAccess($this->app)) {
+            return $this->redirectTo('dashboard');
+        }
+
         $adminGroup = $this->app['sentry']->getGroupProvider()->findByName('Admin');
         $adminUsers = $this->app['sentry']->findAllUsersInGroup($adminGroup);
 
